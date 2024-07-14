@@ -1,0 +1,17 @@
+firefox
+git
+gnome
+xorg
+i3
+yay
+nvim
+zsh
+alacrity
+meslo-nerd-font
+noto-fonts-cjk
+noto-fonts-emoji
+polybar
+rofi
+feh
+cmake
+stow
