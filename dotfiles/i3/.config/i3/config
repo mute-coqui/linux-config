@@ -9,7 +9,15 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+client.focused #1f1f28 #1f1f28 #dcd7ba
+client.unfocused #1f1f28 #1f1f28 #c0a36e
+default_border none
+default_floating_border none
+
 set $mod Mod1
+
+# open custom apps in floating mode
+for_window [class="Wave Motion Engine"] floating enable
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
