@@ -9,19 +9,27 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-client.focused #1f1f28 #1f1f28 #dcd7ba
-client.unfocused #1f1f28 #1f1f28 #c0a36e
-default_border none
-default_floating_border none
+# Sets title bar colors (disabled since border is none)
+# client.focused #1f1f28 #1f1f28 #dcd7ba
+# client.unfocused #1f1f28 #1f1f28 #c0a36e
+
+# Set border for all windows
+for_window [all] border none
+gaps inner 5
+gaps outer 5
 
 set $mod Mod1
 
 # open custom apps in floating mode
 for_window [class="Wave Motion Engine"] floating enable
+for_window [class="Wave Motion Engine"] move container to workspace 2
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:MesloLGS Nerd Font Mono 11
+
+# start picom
+exec_always --no-startup-id picom
 
 # start feh and set the background
 exec_always --no-startup-id feh --bg-scale ~/Pictures/katsushika.jpg
